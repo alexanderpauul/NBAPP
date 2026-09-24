@@ -1,2 +1,2 @@
 # NBAPP
-This a Website-applications for NBA News
+This is a Website-applications for NBA News
