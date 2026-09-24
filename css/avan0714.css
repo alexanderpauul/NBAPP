@@ -915,8 +915,13 @@ body {
     border-top-right-radius: var(--border-radius);
 }
 
+.card-image-mini {
+ max-width: 350px;
+ max-height: 200px;
+}
+
 .card-title {
-    font-size: x-large;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: .09rem;
 }
@@ -995,6 +1000,28 @@ body {
     background: linear-gradient(135deg, #d4af37, #f5e6a3, #d4af37);
     color: #544e4e;
     border: 1px solid #f5e6a3;
+}
+
+.silver-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #b1abab 0%, #B8B8B8 35%, #E0E0E0 50%, #AFAFAF 65%, #f1f1f1 100%);
+    color: #454545;
+    border: 1px solid #918f8f;
+    font-size: small;
+}
+
+.bronze-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #f7a973 0%, #c78d53 25%, #E0B06A 50%, #B8793E 70%, #ffaa65 100%);
+    color: #ffffff;
+    border: 1px solid #bba53e;
+    font-size: small;
 }
 
 .posted-date {
