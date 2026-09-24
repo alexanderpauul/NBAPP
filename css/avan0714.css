@@ -45,7 +45,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    border-bottom: 1px solid var(--primary-color-light);
 }
 
 .nav-position-top {
@@ -76,7 +75,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: var(--color-yellow);
+    color: var(--color-white);
 }
 
 .nav-links li a:hover::before {
@@ -90,6 +89,15 @@ body {
     background: linear-gradient(90deg, var(--color-red), var(--color-yellow));
     border-radius: 0.08rem;
     transition: 0.3ms;
+}
+
+.nav-links li.active a {
+    background: linear-gradient(90deg, var(--color-red), var(--color-yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
 }
 
 .nav-links li.active::before {
@@ -880,10 +888,10 @@ body {
 .card {
     background: #fff;
     border-radius: var(--border-radius);
-    /* box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3); */
     box-shadow: 10px 10px 30px rgb(192 192 192 / 50%);
     border: 0.01rem solid var(--color-secondary);
     cursor: pointer;
+    position: relative;
 }
 
 .card:hover {
@@ -978,8 +986,15 @@ body {
     filter: invert(60%);
 }
 
-.card-button-end:hover img {
-    filter: invert(0);
+
+.golden-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #d4af37, #f5e6a3, #d4af37);
+    color: #544e4e;
+    border: 1px solid #f5e6a3;
 }
 
 .posted-date {
